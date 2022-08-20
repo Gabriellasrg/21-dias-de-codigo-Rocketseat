@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  box-sizing: border-box;
+  background-color:rgb(19, 7, 7);
+}
+
+.botao{
+  text-align: center;
+  margin-top: 50vh;
+}
+
+button{
+  background-image: linear-gradient(45deg, rgb(139, 0, 0), rgb(81, 6, 6));
+  padding: 20px 40px;
+  font-size: 24px;
+  color: #ffff;
+  border:none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes botao_animado{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.05);
+  }
+}
+/*mouse por cima do botão cria o seguinte evento*/
+button:hover{
+  animation-name: botao_animado;
+  animation-duration: 0.5s;                  /*duração da animação*/
+  animation-timing-function:ease-in-out ;   /*sensibilidade da animação*/
+  animation-iteration-count: infinite;     /*Quantas vezes a animação irá se repetir*/
+  animation-duration:alternate ;          /*por onde a animação irá começar*/
+}
+
